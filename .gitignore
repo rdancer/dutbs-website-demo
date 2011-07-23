@@ -1,0 +1,10 @@
+index.html
+
+# Some OS X helper files
+.DS_Store
+
+# Vim text editor swap files
+.*.sw?
+
+# Testing area
+test/

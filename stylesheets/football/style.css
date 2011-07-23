@@ -1,0 +1,668 @@
+@charset "UTF-8";
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+*/
+
+body {
+	margin: 0;
+	padding: 0ex 5ex 0 5ex;
+	background: #000000;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 14px;
+	color: black;
+}
+
+/* Change to black-on-white */
+body {
+  background: white;
+}
+
+h1, h2, h3 {
+	/* text-transform: lowercase; */
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 400;
+	color: black;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h1, h2, h3, h4 {
+	clear: both;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #7E317B /* Pantone 255C */;
+}
+
+
+a:hover {
+	text-decoration: underline;
+}
+
+img.border {
+	border: 6px solid #EEE7DF;
+}
+
+.officerInfo {
+	clear: left;
+}
+
+
+/* XXX Kludge: override the Markdown-related style-sheet */
+.officerInfo + img {
+        width: 80px;
+	height: 80px;
+	padding-left: 0px;
+}
+
+.photo, .productLink {
+	float: left;
+	margin-right: 32px;
+	margin-top: 1ex;
+	padding-top: 0;
+	padding-bottom: 1ex;
+}
+
+.productLink {
+	float: right;
+	margin-left: 32px;
+	margin-top: 1ex;
+	padding-top: 0;
+	padding-bottom: 1ex;
+}
+
+.productLink {
+	padding-bottom: 4ex;
+}
+
+.blurb, .productDescription {
+	margin-top: 0ex;
+	padding-top: 0;
+	min-height: 100px; /* height of the avatar photo */
+}
+
+.position {
+	border: 6px solid #EEEEEE;
+	float: left;
+}
+
+.name {
+	border: 6px solid #EEEEEE;
+	float: left;
+}
+img.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+
+img.alignright {
+	float: right;
+}
+
+img.aligncenter {
+	margin: 0px auto;
+}
+
+#wrapper {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.facebookPhotos {
+	margin-left:auto;
+	margin-right:auto;
+
+        padding-bottom: 1em;
+
+	/*
+         * Display the children of a div box from right to left
+	 * XXX DNW Does Not Work
+	 *
+	 * Adapted from (downloaded 2013-01-14)
+	 * http://www.w3schools.com/cssref/css3_pr_box-direction.asp
+	 */
+	
+	/* Firefox */
+	display:-moz-box;
+	-moz-box-direction:reverse;
+	
+	/* Safari and Chrome */
+	display:-webkit-box;
+	-webkit-box-direction:reverse;
+	
+	/* W3C */
+	display:box;
+	box-direction:reverse;
+}
+
+
+/* Note: Markdown adds spurious paragraphs */
+.facebookPhotos * {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+.facebookPhotos .singlePhoto img {
+	height: 150px;
+}
+
+/* Header */
+
+#header {
+	margin: 0 auto;
+	/*position: absolute;
+	top: 0;
+	left: 0;*/
+	/*background: blue;*/
+
+	/* Paint a solid-colour background band upon which the header is
+	 * imprinted */
+	background: #7E317B /* Pantone 255C */;
+	position: relative;
+	left: -5ex;
+	width: 100%;
+	padding-left: 5ex;
+	padding-right: 5ex;
+
+	color: white;
+}
+
+#header a {
+	color: white;
+}
+
+#header ul a:hover {
+	background: #C43B8E;
+	text-decoration: none;
+	color: #FFFFFF;
+	/*padding-top: 3px; */
+	padding-bottom: 0px;
+}
+#header a.currentTab:hover {
+	background: white;
+	color: #C43B8E !important;
+	padding-bottom: 1ex;
+}
+#logo a:hover {
+	text-decoration: none;
+}
+
+#header + * {
+    /*padding-top: 40px;*/
+}
+
+#header ul {
+        display: block;
+	padding-top: 0.5ex;
+	text-align: right;
+}
+
+#header li {
+        display: inline;
+	font-size: 1.2em;
+}
+
+#header li:after {
+	content: " ❘ ";
+	color: #9C9A9A;
+}
+#header li:last-child:after {
+	content: "";
+}
+
+#header a {
+	/* Add padding so that the glyps don't touch the tab flap's border too
+	 * closely. */
+	padding-left: 2px;
+	padding-right: 2px;
+}
+#header .currentTab {
+        background: white;
+	color: #7E317B /* Pantone 255C */ !important;
+	padding-bottom: 1ex;
+	border-radius: 5px;
+}
+
+#header #facebookLikeButton {
+        border:none;
+        overflow:hidden;
+        /*width:55px; */ /* Just the 'like' button */
+        width:305px; /* Slightly less than the default */
+	height:35px;
+}
+
+/* Italicize the 'Muay Thai' string and other Thai phrases */
+
+*:lang(th), *:lang(tha) {
+	font-style: italic; /* XXX Should invert the italics: If the normal
+				   text is italicized, the lang=th should be
+				   regular. */
+}
+
+/* Logo */
+
+#logo {
+	/*height: 30px;*/
+	margin: 0px auto;
+	margin-bottom: 0px;
+	padding-right: 1ex;
+	color: #7FA72C;
+	float: left;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+
+/* Search */
+
+#search {
+	float: right;
+	width: 280px;
+	height: 100px;
+	padding: 0;
+}
+
+#search form {
+	height: 41px;
+	margin: 0;
+	padding: 60px 0 0 30px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search-text {
+	width: 195px;
+	padding: 6px 10px;
+	border: none;
+	background: #FFFFFF;
+	text-transform: lowercase;
+	font: normal 11px;
+	color: #7F7F81;
+}
+
+#search-submit {
+	display: none;
+}
+
+/* Menu */
+
+#menu-wrapper {
+	width: 980px;
+	margin: 0px auto;
+	padding: 0px;
+	color: #000000;
+}
+
+#menu {
+	margin: 0;
+	padding: 0px 20px;
+	list-style: none;
+	letter-spacing: -1px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 20px;
+	font-weight: normal;
+	color: #C6E973;
+}
+
+#menu li {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu a {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	color: #C6E973;
+}
+
+#menu .current_page_item a {
+	border-radius: 5px;
+	background: #7BA01C;
+}
+
+#menu a:hover {
+	border-radius: 5px;
+	background: #7BA01C;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#menu span {
+	margin: 0px;
+	padding: 0px 20px;
+}
+
+#menu > li {
+}
+
+#menu > li.active {
+	border-radius: 5px;
+	background: #7BA01C;
+	color: #FFFFFF;
+}
+
+.dropotron li.opener {
+	border-right: solid 2px #FFFFFF;
+}
+
+.dropotron {
+	margin: 0px;
+	padding: 10px 0px;
+	background: #7BA01C;
+	border-radius: 5px;
+	list-style: none;
+	text-transform: lowercase;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+.dropotron a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.dropotron li {
+	margin: 0px;
+	padding: 5px 20px;
+}
+
+.dropotron li:hover, .dropotron li.active {
+	background: #6A9306;
+}
+
+/* Page */
+
+#page {
+	width: 900px;
+	margin: 0px auto 20px auto;
+	padding: 30px 40px;
+	background: url(images/content-wrapper-bg.png) repeat;
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 650px;
+}
+
+#content .contentbg {
+	width: 590px;
+	padding: 10px 30px 0px 30px;
+}
+
+.post {
+	clear: both;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000000;
+}
+
+.post .title {
+	padding-top: 10px;
+	letter-spacing: -4px;
+	text-transform: lowercase;
+	font-size: 50px;
+	color: #7FA72C;
+}
+
+.post .title a {
+	border: none;
+	color: #7FA72C;
+}
+
+.post .meta {
+	padding-bottom: 10px;
+	text-align: left;
+	font-size: 11px;
+	font-style: italic;
+}
+
+.post .meta a {
+}
+
+.post .entry {
+	text-align: justify;
+	margin-bottom: 25px;
+	padding: 10px 0px 0px 0px;
+}
+
+.links {
+	display: block;
+	width: 96px;
+	padding: 2px 0px 2px 0px;
+	background: #A53602;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+/* Sidebar */
+
+#sidebar-bg {
+	float: left;
+	width: 330px;
+}
+
+#sidebar {
+	overflow: hidden;
+	width: 270px;
+	padding: 30px 30px 20px 30px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li ul {
+	margin: 0px 0px;
+	padding-bottom: 30px;
+}
+
+#sidebar li li {
+	line-height: 35px;
+}
+
+#sidebar li li span {
+	display: block;
+	margin-top: -20px;
+	padding: 0;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#sidebar h2 {
+	height: 38px;
+	margin-bottom: 20px;
+	padding: 12px 0 0 0px;
+	border-bottom: 1px solid #000000;
+	letter-spacing: -2px;
+	font-size: 30px;
+	color: #FFC023;
+}
+
+#sidebar p {
+	margin: 0 0px;
+	padding: 0px 20px 20px 20px;
+	text-align: justify;
+}
+
+#sidebar a {
+	border: none;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar_wrap {
+	padding: 20px;
+}
+
+#calendar table {
+	width: 100%;
+}
+
+#calendar tbody td {
+	text-align: center;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+/* Footer */
+
+#footer {
+	height: 100px;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 18px;
+	line-height: normal;
+	text-align: center;
+	text-transform: lowercase;
+	font-size: 12px;
+	color: #76716C;
+}
+
+#footer a {
+	text-decoration: underline;
+}
+
+#slider {
+	position: relative;
+	width: 590px;
+	margin: 0px auto 20px auto;
+}
+
+#slider .viewer {
+	width: 590px;
+	height: 300px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#slider .viewer .reel {
+	display: none;
+	height: 300px;
+}
+
+#slider .viewer .reel .slide {
+	position: relative;
+	width: 590px;
+	height: 300px;
+}
+
+#splash {
+	width: 980px;
+	margin: 30px auto 30px auto;
+}
+
+#three-column {
+	overflow: hidden;
+	width: 980px;
+	margin: 20px auto;
+}
+
+#three-column #column1 {
+	float: left;
+	width: 300px;
+	margin-right: 40px;
+}
+
+#three-column #column2 {
+	float: left;
+	width: 300px;
+}
+
+#three-column #column3 {
+	float: right;
+	width: 300px;
+}
+
+
+/**
+ * Big orange button -- drive conversions
+ *
+ * Adapted from (accessed 2013-04-11)
+ * http://www.readymadecode.com/orange-css-button-by-ready-made-code/
+ */
+.bigOrangeButton
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+
+	-moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.6);
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.6);
+
+	background: -moz-linear-gradient(19% 75% 90deg, #FF4D01, #FF8924);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF8924), to(#FF4D01));
+
+	color:#fff;
+	font-family:arial,helvetica,sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 20px;
+	text-decoration:none;
+}
+
+.bigOrangeButton:hover
+{
+	background: -moz-linear-gradient(19% 75% 90deg, #EB4701, #F58423);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F58423), to(#EB4701));
+}
+
+.notOnRealWebsite
+{
+	background: rgba(100, 100, 255, 0.3);
+	padding: 2em;
+	border-radius: 15px;
+}
