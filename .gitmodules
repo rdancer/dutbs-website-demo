@@ -1,0 +1,3 @@
+[submodule "lib/htmlpurifier"]
+	path = lib/htmlpurifier
+	url = http://repo.or.cz/r/htmlpurifier/rdancer.git

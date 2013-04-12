@@ -1,0 +1,43 @@
+/* Markdown generates unadorned HTML.  Attempt to make it beautiful. */
+img, .kruPhoto {
+  float: right;
+  padding-left: 0.7em;
+  padding-top: 0;
+  margin-top: 0;
+}
+  
+img {
+  /* The original image is 300x300px.  That's too big, and the paragraph is way
+   * too short for a 300px height.  Make it half the size, so Retina displays
+   * will display crisp */
+  width: 150px;
+  height: 150px;
+}
+
+.kruPhoto {
+    width: 480px;
+    height: 360px;
+}
+
+.kruPhoto img {
+  width: inherit !important;
+  height: inherit !important;
+}
+
+img + br + a, .kruPhoto .caption {
+  float: right;
+  clear: right;
+  display: block;
+  padding-left: 0.7em;
+  padding-bottom: 0.7em;
+  width: 150px; /* Same as the image */
+  text-align: center; /* Caption looks best when centered below the image */
+}
+.kruPhoto .caption {
+  width: inherit !important; /* Same as the image */
+}
+
+/* Get rid of the gap between the heading and the paragraph text */
+img + br {
+  display: none;
+}
