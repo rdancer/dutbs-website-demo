@@ -26,7 +26,7 @@
   <title>Durham University Thai Boxing Society (DUTBS) Muay Thai</title>
   <meta name="description" content="Student-led society that trains in the martial art of Muay Thai aka Thai Boxing. Training times, equipment, teacher & exec info." />
   <meta name="keywords" content="Muay Thai,Thai Boxing,Durham,DSU,society,training,martial art,fight,traditional,sport,Thailand,Facebook" />
-  <link rel="stylesheet" href="<?php echo $pathPrefix ?>stylesheets/football/style.css" type="text/css" />
+  <link rel="stylesheet" href="<?php echo $pathPrefix ?>stylesheets/style.css" type="text/css" />
 </head>
 <body>
 

@@ -7,7 +7,7 @@
 <head>
   <?php include '../common-head.php' ?>
   <title>Photo Gallery - Durham University Thai Boxing Society (DUTBS) Muay Thai</title>
-  <link rel="stylesheet" href="../stylesheets/football/style.css" type="text/css" />
+  <link rel="stylesheet" href="../stylesheets/style.css" type="text/css" />
 </head>
 <body>
   

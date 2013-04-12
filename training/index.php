@@ -11,7 +11,7 @@
   </title>
   <link
       rel="stylesheet"
-      href="../stylesheets/football/style.css"
+      href="../stylesheets/style.css"
       type="text/css" />
 </head>
 <body>
