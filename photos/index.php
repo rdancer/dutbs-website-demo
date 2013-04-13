@@ -15,7 +15,7 @@
 
   <div class="facebookPhotos">
     <?php
-	markdownEvaluate('https://dl.dropboxusercontent.com/s/g43kbwlzhlkqspp/uploaded_photos.markdown.txt?dl=1');
+	markdownEvaluate('https://www.dropbox.com/s/td33p7841q1kfpy/uploaded_photos.markdown.txt?dl=1');
      ?>
   </div class="facebookPhotos">
 
