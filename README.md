@@ -1,4 +1,4 @@
-# DUTBS.co.uk website snippet
+# DUTBS.co.uk Website Snippet
 
 This is a trimmed-down version of the DUTBS website with just two pages; all
 confidential information has been removed.  The original website can be found
@@ -7,9 +7,20 @@ at <http://www.dutbs.co.uk/>, while this trimmed-down version can be seen
   
  [1]: <http://dutbs-website-demo.herokuapp.com/>
 
+#Deliverables
 
-This code repository contains the following files:
+* Drive increase in membership
+* Code as easy to maintain as possible. Content changes should require little
+  to no technical expertise.
+* Compliance with the Durham University [branding guidelines][duBranding]
+* Welcoming and professional look & feel, with particular attention to
+  attracting female members
+* Search engine optimisation
 
+
+ [duBranding]: http://www.dur.ac.uk/communications.office/marketing/branding/
+
+# Files
 
     index.php
     about/index.php (symbolic link)
@@ -17,7 +28,7 @@ This code repository contains the following files:
 
     photos/index.php
 	    Photos; automatically fed from the DUTBS Facebook page using an
-	    ifft.com script
+	    ifttt.com script
 
     training/index.php
 	    Training calendar; fed from the DUTBS iCalendar on Google
