@@ -1,3 +1,6 @@
 [submodule "lib/htmlpurifier"]
 	path = lib/htmlpurifier
 	url = http://repo.or.cz/r/htmlpurifier/rdancer.git
+[submodule "lib/php-markdown"]
+	path = lib/php-markdown
+	url = git://github.com/michelf/php-markdown.git
