@@ -3,11 +3,13 @@
 This is a trimmed-down version of the DUTBS website with just two pages; all
 confidential information has been removed.  The original website can be found
 at <http://www.dutbs.co.uk/>, while this trimmed-down version can be seen
-[here][1].
+[here][1] (the demo site may take 5 to 7 extra seconds to load).  You can
+browse the corresponding source code [on Github][2].
   
  [1]: <http://dutbs-website-demo.herokuapp.com/>
+ [2]: <https://github.com/rdancer/dutbs-website-demo>
 
-#Deliverables
+##Deliverables
 
 * Drive increase in membership
 * Code as easy to maintain as possible. Content changes should require little
@@ -17,10 +19,9 @@ at <http://www.dutbs.co.uk/>, while this trimmed-down version can be seen
   attracting female members
 * Search engine optimisation
 
-
  [duBranding]: http://www.dur.ac.uk/communications.office/marketing/branding/
 
-# Files
+## Files
 
     index.php
     about/index.php (symbolic link)
