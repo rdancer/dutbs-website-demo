@@ -1,8 +1,9 @@
 # DUTBS.co.uk website snippet
 
 This is a trimmed-down version of the DUTBS website with just two pages; all
-confidential information has been removed.  The original website can be found
-at <http://www.dutbs.co.uk/>.
+confidential information has been removed.  The production website has been
+as of July 2013 successfully handed over to the Society's Executive Committee.
+Its current version can be found at <http://www.dutbs.co.uk/>.
 
 
 This code repository contains the following files:
