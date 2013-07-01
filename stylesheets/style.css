@@ -662,7 +662,7 @@ img.aligncenter {
 
 .notOnRealWebsite
 {
-	background: rgba(100, 100, 255, 0.3);
+	background: rgba(216, 172, 244, 1); /* Pantone 257 C */
 	padding: 2em;
 	border-radius: 15px;
 }
