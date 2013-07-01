@@ -29,8 +29,8 @@ seconds to load); you can browse the corresponding source code [on Github][2].
 	    Site landing page
 
     photos/index.php
-	    Photos; automatically fed from the DUTBS Facebook page using an
-	    <ifttt.com> script
+	    Photos; automatically fed from the DUTBS Facebook page using the
+	    following ifttt.com script: <https://ifttt.com/recipes/101971>.
 
     training/index.php
 	    Training calendar; fed from the DUTBS iCalendar on Google
