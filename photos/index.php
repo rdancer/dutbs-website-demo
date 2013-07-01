@@ -2,7 +2,7 @@
 <!--
   DUTBS Web presence - photo gallery
 
-  Copyright 2012 Jan Minar <rdancer@rdancer.org>
+  Copyright 2012, 2013 Jan Minar <rdancer@rdancer.org>
   -->
 <head>
   <?php include '../common-head.php' ?>
@@ -15,7 +15,7 @@
 
   <div class="facebookPhotos">
     <?php
-	markdownEvaluate('https://dl.dropboxusercontent.com/s/g43kbwlzhlkqspp/uploaded_photos.markdown.txt?dl=1');
+	markdownEvaluate('https://dl.dropboxusercontent.com/s/td33p7841q1kfpy/uploaded_photos.markdown.txt?token_hash=AAHoY3MiOnN3Yef4-FWO0Zc8Pz1p6fYyVO2PaT8WeuaQDw&dl=1');
      ?>
   </div class="facebookPhotos">
 
